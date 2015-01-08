@@ -5,9 +5,6 @@ group :production do
   gem 'rails_12factor'
 end
 
-group :development do
-  gem 'sqlite3'
-end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
@@ -38,6 +35,10 @@ gem 'spring',        group: :development
 gem 'devise'
 
 gem 'figaro'
+
+# Use Bootstrap for styling
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'autoprefixer-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
