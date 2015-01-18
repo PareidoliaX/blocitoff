@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
-  devise_for :users
-  get "welcome/index"
+  devise_for :users # , :controllers => { :registrations => 'users/registrations' } 
+  
+  resources :lists, except: [:index]
 
-  root to: 'welcome#index'
+  root to: 'shallows#home'
+  
 end
