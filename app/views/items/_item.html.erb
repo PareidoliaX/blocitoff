@@ -1,7 +1,9 @@
-<div class="media">
-  <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %> 
-    <div class="media-body">
-      <p><%= item.name %></p>
-    </div>
-  <% end %>
+<div class='row listed-item'>
+  <div class="media col-md-6 col-md-offset-1"> 
+    <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %> 
+      <div class="media-body">
+        <p><%= item.name %></p>
+      </div>
+    <% end %>
+  </div>
 </div>

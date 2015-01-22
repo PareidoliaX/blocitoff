@@ -67,6 +67,29 @@ body {
 
 .new-item {
   padding: 30px;
+  vertical-align: bottom;
+  // display: inline-block;
+}
+
+.list-title {
+  display: inline-block;
+  // vertical-align: bottom;
+  float: none;
+  padding: 35px;
+}
+
+.listed-item {
+  padding: 10px;
+  background-color: #5E5E5E;
+  border: 2px solid #a1a1a1;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+textarea#item_name {
+  width: 225px;
+  height: 25px;
+  border-radius: 5px;
 }
 
 

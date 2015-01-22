@@ -1,9 +1,11 @@
-<%= form_for [@list, @item], url: list_items_path(@list, @item) do |f| %>
+<%= form_for [@list, @item], url: list_items_path(@list, @item), :html => {:class => 'form-inline'} do |f| %>
   <div class='form-group'>
-    <%= f.label "Enter Todo Item" %>
-    <%= f.text_field :name %>
+    <%= f.text_area :name, placeholder: "Enter Todo List Item" %>
   </div>
   <div class='form-group'>
-    <%= f.button :submit, class: 'btn btn-success' %>
+    <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+      <i class="icon-ok icon-white"></i> Add Todo Item
+    <% end %>
   </div>
 <% end %>
+
