@@ -8,7 +8,22 @@
 </div>
 
 <div class='items'>
-  <%= render @items %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Item Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @items.each_with_index do |itm, index| %>
+        <tr>
+          <th scope="row"><%= index %></th>
+          <td><%= itm.name %></td>
+        </tr>
+      <% end %>
+    </tbody>  
+  </table>
 </div>
 
 <div class='row new-item'>
