@@ -1,6 +1,7 @@
 <tr id="<%= "item-#{item.id}"%>">
   <th scope="row"><%= index + 1 %></th>
   <td><%= item.name %></td>
+  <td><%= item.days_left %></td>
   <td><%= link_to "", [@list, item], method: :delete, class: 'glyphicon glyphicon-ok', remote: true %></td>
  </tr>
 
